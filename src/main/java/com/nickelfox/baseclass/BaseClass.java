@@ -29,16 +29,24 @@ public class BaseClass {
 
 
 		//FirefoxOptions c = new FirefoxOptions();
-		ChromeOptions c = new ChromeOptions();
-		c.addArguments("--incognito");
+		//ChromeOptions c = new ChromeOptions();
+		//c.addArguments("--incognito");
 		//c.addArguments("--disable-notifications");
-		c.addArguments("--remote-allow-origins=*");
-		c.addArguments("start-maximized"); // open Browser in maximized mode
+		//c.addArguments("--remote-allow-origins=*");
+		//c.addArguments("start-maximized"); // open Browser in maximized mode
 		//	c.addArguments("--disable-infobars"); // disabling infobars
 		//c.addArguments("--headless");
-		driver = new ChromeDriver(c);
+		//driver = new ChromeDriver(c);
+		//driver = new FirefoxDriver(c);
+		ChromeOptions options = new ChromeOptions();
+		options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+	    driver = new ChromeDriver(options);
+		//driver = new ChromeDriver();
 		//driver = new FirefoxDriver(c);
 		driver.navigate().to("https://www.nickelfox.com/");
+		driver.manage().window().maximize();
+		
+		//driver.navigate().to("https://www.nickelfox.com/");
 		//Thread.sleep(8000);
 
 		System.out.println("user navigate to the website");
