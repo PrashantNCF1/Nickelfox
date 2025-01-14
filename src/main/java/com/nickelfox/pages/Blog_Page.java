@@ -23,7 +23,7 @@ public class Blog_Page {
 
 	public void go_to_blog(WebDriver driver) throws InterruptedException{
 		
-		Thread.sleep(4000);
+		Thread.sleep(7000);
 		blog.click();
 		System.out.println("Go to the blog screen");
 		
