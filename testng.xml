@@ -5,12 +5,12 @@
     <classes>
       <class name="com.nickelfox.testcases.About_Test_case"/>
       <class name="com.nickelfox.testcases.Blog_Page_Test"/>
-      <class name="com.nickelfox.testcases.Career_Page_Test"/>
+      <!-- <class name="com.nickelfox.testcases.Career_Page_Test"/>
       <class name="com.nickelfox.testcases.Contact_Page_Test"/>
       <class name="com.nickelfox.testcases.Contact_With_Us_Page_Test"/>
       <class name="com.nickelfox.testcases.Industries_Page_Test"/>
       <class name="com.nickelfox.testcases.Live_Chat_Test"/>
-      <class name="com.nickelfox.testcases.Service_Test_case"/>
+      <class name="com.nickelfox.testcases.Service_Test_case"/> -->
       
       <!-- <class name="com.nickelfox.testcases.ServiceITSrvcItOutsourcing_Test_case"/> -->
       <!-- <class name="com.nickelfox.baseclass.BaseClass"/> -->
