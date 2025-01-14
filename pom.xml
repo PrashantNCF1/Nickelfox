@@ -58,12 +58,7 @@
             <version>4.20.0</version>
         </dependency>
         <!-- TestNG Dependency -->
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.4.0</version>
-            <scope>test</scope>
-        </dependency>
+        
         <!-- WebDriver Manager Dependency -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
