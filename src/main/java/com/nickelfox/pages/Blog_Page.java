@@ -1,16 +1,18 @@
 package com.nickelfox.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import java.time.Duration;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import java.time.Duration;
+
 
 public class Blog_Page {
 
-	@FindBy (xpath= "//*[@id=\"menu-item-28875\"]/a")
+	@FindBy(css = "#menu-item-28875 > a")
 	private WebElement blog;
 	
 	@FindBy (xpath= "//div[1]/div/div[2]/div/div/div/div/span[3]")
