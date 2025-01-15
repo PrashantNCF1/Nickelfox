@@ -64,9 +64,9 @@ public class Contact_with_us_Page {
 
 	public void ClickOnContact(WebDriver driver) throws InterruptedException {
 		
-		((JavascriptExecutor) driver).executeScript(
-	            "document.evaluate(\"//li[@id='menu-item-28876']//a[normalize-space()='Contact']\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.focus();"
-	        );
+		//((JavascriptExecutor) driver).executeScript(
+	         //   "document.evaluate(\"//li[@id='menu-item-28876']//a[normalize-space()='Contact']\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.focus();"
+	       // );
 		Thread.sleep(3000);
 		linkContact.click();	
 		
