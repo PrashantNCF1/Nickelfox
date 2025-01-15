@@ -14,7 +14,7 @@ import org.testng.Assert;
 
 public class Contact_with_us_Page {
 
-	@FindBy(xpath = "/html/body/div[1]/section/div/div[2]/div/div/div/div/div/div[1]/div/ul/li[8]/a")
+	@FindBy(xpath = "//div[@class="plus-navigation-menu menu-horizontal   "]/ul/li/a[text()='Contact']")
 	WebElement linkContact;
 
 	@FindBy (xpath = "//iframe[@id='hs-form-iframe-0']")
