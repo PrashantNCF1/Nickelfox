@@ -31,7 +31,14 @@ public class Blog_Page {
 		//Thread.sleep(12000);
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.elementToBeClickable(blog));
-		blog.click();
+		if (blog.isDisplayed() && blog.isEnabled()) {
+		    System.out.println("Element is visible and enabled.");
+		    blog.click();
+		} else {
+		    System.out.println("Element is not ready for interaction.");
+		}
+		
+		//blog.click();
 		System.out.println("Go to the blog screen");
 		
 		String title= driver.getTitle();
