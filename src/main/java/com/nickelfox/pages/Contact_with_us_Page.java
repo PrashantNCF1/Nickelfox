@@ -8,6 +8,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.JavascriptExecutor;
+
 import org.testng.Assert;
 
 public class Contact_with_us_Page {
@@ -69,6 +71,7 @@ public class Contact_with_us_Page {
 		//linkContact.click();	
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(linkContact));
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
 		element.click();
 		
       System.out.println("*********Verify Contact Form Submission*********");
