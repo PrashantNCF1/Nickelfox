@@ -27,7 +27,7 @@ public class Blog_Page {
 	public void go_to_blog(WebDriver driver) throws InterruptedException{
 		
 		//Thread.sleep(12000);
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.elementToBeClickable(blog));
 		blog.click();
 		System.out.println("Go to the blog screen");
