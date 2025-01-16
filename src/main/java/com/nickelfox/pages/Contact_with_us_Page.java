@@ -69,7 +69,7 @@ public class Contact_with_us_Page {
 	       // );
 		//Thread.sleep(15000);
 		//linkContact.click();	
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(linkContact));
 		//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
 		element.click();
