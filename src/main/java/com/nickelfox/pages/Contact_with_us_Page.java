@@ -67,12 +67,12 @@ public class Contact_with_us_Page {
 		//((JavascriptExecutor) driver).executeScript(
 	         //   "document.evaluate(\"//li[@id='menu-item-28876']//a[normalize-space()='Contact']\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.focus();"
 	       // );
-		Thread.sleep(15000);
-		linkContact.click();	
-		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-		//WebElement element = wait.until(ExpectedConditions.elementToBeClickable(linkContact));
+		//Thread.sleep(15000);
+		//linkContact.click();	
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(linkContact));
 		//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
-		//element.click();
+		element.click();
 		
       System.out.println("*********Verify Contact Form Submission*********");
 		System.out.println("Navigating to Contact Page");
