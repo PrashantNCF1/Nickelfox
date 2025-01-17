@@ -27,18 +27,17 @@ public class BaseClass {
 
 		//WebDriverManager.firefoxdriver().setup();
 		WebDriverManager.chromedriver().setup();
-
-
-		//FirefoxOptions c = new FirefoxOptions();
-		//ChromeOptions c = new ChromeOptions();
-		//c.addArguments("--incognito");
-		//c.addArguments("--disable-notifications");
-		//c.addArguments("--remote-allow-origins=*");
-		//c.addArguments("start-maximized"); // open Browser in maximized mode
-		//	c.addArguments("--disable-infobars"); // disabling infobars
-		//c.addArguments("--headless");
-		//driver = new ChromeDriver(c);
-		//driver = new FirefoxDriver(c);
+               options.addArguments("--headless");
+		options.addArguments("--disable-gpu");
+		options.addArguments("--window-size=1920,1080");
+		options.addArguments("--no-sandbox");
+		options.addArguments("--disable-dev-shm-usage");
+		options.addArguments("--start-maximized");
+		//options.addArguments("--remote-allow-origins=*");
+		options.addArguments("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36\r\n");
+		options.addArguments("--allow-insecure-localhost");
+        //specifically this line here :)
+		options.setAcceptInsecureCerts(true);
 		ChromeOptions options = new ChromeOptions();
 		options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 	    driver = new ChromeDriver(options);
